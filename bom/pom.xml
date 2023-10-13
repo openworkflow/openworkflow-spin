@@ -2,17 +2,17 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.camunda</groupId>
-    <artifactId>camunda-bpm-release-parent</artifactId>
+    <groupId>co.openworkflow</groupId>
+    <artifactId>openworkflow-community-release-parent</artifactId>
     <version>2.3.0</version>
     <!-- do not remove empty tag - http://jira.codehaus.org/browse/MNG-4687 -->
     <relativePath />
   </parent>
 
-  <groupId>org.camunda.spin</groupId>
-  <artifactId>camunda-spin-bom</artifactId>
-  <version>1.22.0</version>
-  <name>camunda spin - bom</name>
+  <groupId>co.openworkflow.spin</groupId>
+  <artifactId>openworkflow-spin-bom</artifactId>
+  <version>8.0.0</version>
+  <name>OpenWorkflow Spin - bom</name>
   <packaging>pom</packaging>
 
   <properties>
@@ -23,39 +23,39 @@
     <dependencies>
 
       <dependency>
-        <groupId>org.camunda.spin</groupId>
-        <artifactId>camunda-spin-core</artifactId>
+        <groupId>co.openworkflow.spin</groupId>
+        <artifactId>openworkflow-spin-core</artifactId>
         <version>${project.version}</version>
       </dependency>
       
       <dependency>
-        <groupId>org.camunda.spin</groupId>
-        <artifactId>camunda-spin-core</artifactId>
+        <groupId>co.openworkflow.spin</groupId>
+        <artifactId>openworkflow-spin-core</artifactId>
         <type>test-jar</type>
         <version>${project.version}</version>
       </dependency>
 
       <dependency>
-        <groupId>org.camunda.spin</groupId>
-        <artifactId>camunda-spin-dataformat-all</artifactId>
+        <groupId>co.openworkflow.spin</groupId>
+        <artifactId>openworkflow-spin-dataformat-all</artifactId>
         <version>${project.version}</version>
       </dependency>
 
       <dependency>
-        <groupId>org.camunda.spin</groupId>
-        <artifactId>camunda-spin-dataformat-json-jackson</artifactId>
+        <groupId>co.openworkflow.spin</groupId>
+        <artifactId>openworkflow-spin-dataformat-json-jackson</artifactId>
         <version>${project.version}</version>
       </dependency>
 
       <dependency>
-        <groupId>org.camunda.spin</groupId>
-        <artifactId>camunda-spin-dataformat-xml-dom</artifactId>
+        <groupId>co.openworkflow.spin</groupId>
+        <artifactId>openworkflow-spin-dataformat-xml-dom</artifactId>
         <version>${project.version}</version>
       </dependency>
 
       <dependency>
-        <groupId>org.camunda.spin</groupId>
-        <artifactId>camunda-spin-dataformat-xml-dom-jakarta</artifactId>
+        <groupId>co.openworkflow.spin</groupId>
+        <artifactId>openworkflow-spin-dataformat-xml-dom-jakarta</artifactId>
         <version>${project.version}</version>
       </dependency>
     </dependencies>
@@ -78,9 +78,9 @@
   </build>
 
   <scm>
-    <url>https://github.com/camunda/camunda-spin</url>
-    <connection>scm:git:git@github.com:camunda/camunda-spin.git</connection>
-    <developerConnection>scm:git:git@github.com:camunda/camunda-spin.git</developerConnection>
+    <url>https://github.com/openworkflow/openworkflow-spin</url>
+    <connection>scm:git:git@github.com:openworkflow/openworkflow-spin.git</connection>
+    <developerConnection>scm:git:git@github.com:openworkflow/openworkflow-spin.git</developerConnection>
     <tag>1.22.0</tag>
   </scm>
 

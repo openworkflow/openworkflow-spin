@@ -2,28 +2,28 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.camunda.spin</groupId>
-    <artifactId>camunda-spin-root</artifactId>
-    <version>1.22.0</version>
+    <groupId>co.openworkflow.spin</groupId>
+    <artifactId>openworkflow-spin-root</artifactId>
+    <version>8.0.0</version>
   </parent>
 
-  <artifactId>camunda-spin-dataformat-xml-dom</artifactId>
-  <name>camunda Spin - DOM XML data format</name>
+  <artifactId>openworkflow-spin-dataformat-xml-dom</artifactId>
+  <name>OpenWorkflow Spin - DOM XML data format</name>
 
   <dependencies>
     <dependency>
-      <groupId>org.camunda.spin</groupId>
-      <artifactId>camunda-spin-core</artifactId>
+      <groupId>co.openworkflow.spin</groupId>
+      <artifactId>openworkflow-spin-core</artifactId>
     </dependency>
 
     <dependency>
-      <groupId>org.camunda.commons</groupId>
-      <artifactId>camunda-commons-logging</artifactId>
+      <groupId>co.openworkflow.commons</groupId>
+      <artifactId>openworkflow-commons-logging</artifactId>
     </dependency>
 
     <dependency>
-      <groupId>org.camunda.commons</groupId>
-      <artifactId>camunda-commons-utils</artifactId>
+      <groupId>co.openworkflow.commons</groupId>
+      <artifactId>openworkflow-commons-utils</artifactId>
     </dependency>
 
     <dependency>
@@ -87,8 +87,8 @@
     </dependency>
 
     <dependency>
-      <groupId>org.camunda.spin</groupId>
-      <artifactId>camunda-spin-core</artifactId>
+      <groupId>co.openworkflow.spin</groupId>
+      <artifactId>openworkflow-spin-core</artifactId>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
@@ -195,7 +195,7 @@
               <comparisonVersion>${spin.version.old}</comparisonVersion>
               <logResults>true</logResults>
               <excludes>
-                <exclude>org/camunda/spin/impl/**</exclude>
+                <exclude>co/openworkflow/spin/impl/**</exclude>
               </excludes>
             </configuration>
             <executions>

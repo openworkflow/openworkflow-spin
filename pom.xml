@@ -1,16 +1,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <!-- camunda BPM parent release pom -->
+  <!-- OpenWorkflow Community parent release pom -->
   <parent>
-    <groupId>org.camunda.spin</groupId>
-    <artifactId>camunda-spin-bom</artifactId>
-    <version>1.22.0</version>
+    <groupId>co.openworkflow.spin</groupId>
+    <artifactId>openworkflow-spin-bom</artifactId>
+    <version>8.0.0</version>
     <relativePath>bom</relativePath>
   </parent>
 
-  <artifactId>camunda-spin-root</artifactId>
-  <name>camunda Spin - root</name>
+  <artifactId>openworkflow-spin-root</artifactId>
+  <name>OpenWorkflow Spin - root</name>
   <inceptionYear>2014</inceptionYear>
   <packaging>pom</packaging>
 
@@ -24,7 +24,7 @@
 
   <properties>
     <assertj.version>2.9.1</assertj.version>
-    <commons.version>1.13.0</commons.version>
+    <commons.version>8.0.0</commons.version>
     <graal.js.version>21.1.0</graal.js.version>
     <groovy.version>2.4.13</groovy.version>
     <jackson.version>2.15.2</jackson.version>
@@ -47,8 +47,8 @@
     <dependencies>
 
       <dependency>
-        <groupId>org.camunda.commons</groupId>
-        <artifactId>camunda-commons-bom</artifactId>
+        <groupId>co.openworkflow.commons</groupId>
+        <artifactId>openworkflow-commons-bom</artifactId>
         <version>${commons.version}</version>
         <type>pom</type>
         <scope>import</scope>
@@ -166,7 +166,7 @@
           <version>3.5.0</version>
           <configuration>
             <instructions>
-              <Export-Package>org.camunda.spin*</Export-Package>
+              <Export-Package>co.openworkflow.spin*</Export-Package>
             </instructions>
           </configuration>
         </plugin>
@@ -209,10 +209,10 @@
   </profiles>
 
   <scm>
-    <url>https://github.com/camunda/camunda-spin</url>
-    <connection>scm:git:git@github.com:camunda/camunda-spin.git</connection>
-    <developerConnection>scm:git:git@github.com:camunda/camunda-spin.git</developerConnection>
-    <tag>1.22.0</tag>
+    <url>https://github.com/openworkflow/openworkflow-spin</url>
+    <connection>scm:git:git@github.com:openworkflow/openworkflow-spin.git</connection>
+    <developerConnection>scm:git:git@github.com:openworkflow/openworkflow-spin.git</developerConnection>
+    <tag>8.0.0</tag>
   </scm>
 
 </project>

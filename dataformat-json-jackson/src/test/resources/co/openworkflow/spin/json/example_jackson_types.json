@@ -1,0 +1,9 @@
+{
+  "amount": 2000,
+  "customer": {
+    "name": "Kermit",
+    "contractStartDate": 20130505,
+    "@class": "co.openworkflow.spin.json.mapping.RegularCustomer"
+  },
+  "@class": "co.openworkflow.spin.json.mapping.Invoice"
+}

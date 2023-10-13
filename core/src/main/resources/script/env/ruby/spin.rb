@@ -12,10 +12,10 @@ See the License for the specific language governing permissions and
 limitations under the License.
 =end
 
-# This is the default environment for using camunda Spin in Ruby applications.
+# This is the default environment for using OpenWorkflow Spin in Ruby applications.
 
 # expose Spin's S(...) function globally
 def S(*args)
-  org.camunda.spin.Spin.S(*args)
+  co.openworkflow.spin.Spin.S(*args)
 end
 

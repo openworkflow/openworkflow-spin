@@ -1,0 +1,1 @@
+$order = S($input, "application/xml").mapTo("co.openworkflow.spin.xml.mapping.Order")

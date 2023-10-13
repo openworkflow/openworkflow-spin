@@ -2,13 +2,13 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.camunda.spin</groupId>
-    <artifactId>camunda-spin-root</artifactId>
-    <version>1.22.0</version>
+    <groupId>co.openworkflow.spin</groupId>
+    <artifactId>openworkflow-spin-root</artifactId>
+    <version>8.0.0</version>
   </parent>
 
-  <artifactId>camunda-spin-dataformat-all</artifactId>
-  <name>camunda Spin - all dataformats in one</name>
+  <artifactId>openworkflow-spin-dataformat-all</artifactId>
+  <name>OpenWorkflow Spin - all dataformats in one</name>
 
   <properties>
     <!-- We shade artifacts into the jar, so we need to generate 
@@ -21,13 +21,13 @@
   <dependencies>
 
     <dependency>
-      <groupId>org.camunda.spin</groupId>
-      <artifactId>camunda-spin-dataformat-json-jackson</artifactId>
+      <groupId>co.openworkflow.spin</groupId>
+      <artifactId>openworkflow-spin-dataformat-json-jackson</artifactId>
     </dependency>
 
     <dependency>
-      <groupId>org.camunda.spin</groupId>
-      <artifactId>camunda-spin-dataformat-xml-dom</artifactId>
+      <groupId>co.openworkflow.spin</groupId>
+      <artifactId>openworkflow-spin-dataformat-xml-dom</artifactId>
     </dependency>
 
     <dependency>
@@ -60,8 +60,8 @@
               <promoteTransitiveDependencies>true</promoteTransitiveDependencies>
               <artifactSet>
                 <excludes>
-                  <exclude>org.camunda.commons:*</exclude>
-                  <exclude>org.camunda.spin:camunda-spin-core</exclude>
+                  <exclude>co.openworkflow.commons:*</exclude>
+                  <exclude>co.openworkflow.spin:openworkflow-spin-core</exclude>
                   <exclude>org.slf4j:*</exclude>
                 </excludes>
               </artifactSet>
@@ -136,7 +136,7 @@
         <configuration>
           <includeDependencySources>true</includeDependencySources>
           <includeTransitiveDependencySources>true</includeTransitiveDependencySources>
-          <dependencySourceIncludes><include>org.camunda.spin:*</include></dependencySourceIncludes>
+          <dependencySourceIncludes><include>co.openworkflow.spin:*</include></dependencySourceIncludes>
           <additionalDependencies>
            <additionalDependency>
              <groupId>junit</groupId>
@@ -164,8 +164,8 @@
               !net.minidev.json*,
               !org.codehaus.jackson*,
               org.slf4j,
-              org.camunda.commons.utils,
-              org.camunda.commons.logging,
+              co.openworkflow.commons.utils,
+              co.openworkflow.commons.logging,
               *
             </Import-Package>
             <Bundle-ClassPath>.</Bundle-ClassPath>
